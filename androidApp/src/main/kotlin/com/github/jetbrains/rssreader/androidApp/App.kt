@@ -28,7 +28,7 @@ class App : Application() {
         startKoin {
             if (BuildConfig.DEBUG) androidLogger(Level.ERROR)
 
-            androidContext(this@App)
+            androidContext(this)
             modules(appModule)
         }
     }
